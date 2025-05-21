@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Order healthy African finger foods and snacks in the USA. Fast delivery of authentic Nigerian meals near you."
+    />
+    <meta
+      name="keywords"
+      content="healthy African snacks USA, Nigerian finger foods, meat pies near me, puff puffs, zobo drink, order healthy food online"
+    />
+    <meta name="author" content="Foodie" />
+    <title>
+      Afri-Snakie | Healthy African Finger Foods & Snacks in the USA
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./images/logosf.webp" alt="Foodie Logo" class="logo-img" />
+        <h1>Afri-Snakie</h1>
+      </div>
+      <label for="toggle" class="hamburger">☰</label>
+      <input type="checkbox" id="toggle" />
+      <nav class="nav-right">
+        <ul>
+          <li>
+            <a href="#home" aria-label="Home"
+              ><span class="nav-span">Home</span></a
+            >
+          </li>
+          <li><a href="menu.html" aria-label="Menu">Menu</a></li>
+          <li><a href="specials.html" aria-label="Specials">Specials</a></li>
+          <li><a href="contact.html" aria-label="Contact">Contact</a></li>
+          <li>
+            <a href="#cart" aria-label="Cart">
+              <img src="./images/cart.jpg" alt="Cart Icon" class="cart-icon" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="hero-section">
+        <div class="hero-content genLayout">
+          <div class="hero-text">
+            <h2>HOME MADE<br />HEALTHY SNACKS.</h2>
+            <p>Authentic African snacks delivered fresh to your door.</p>
+            <a href="menu.html" class="btn">Check Menu</a>
+          </div>
+          <div class="hero-image">
+            <img src="./images/bm1.webp" alt="Healthy African snacks platter" />
+          </div>
+        </div>
+      </section>
+
+      <section id="specials-preview" class="special-dish-section genLayout">
+        <h2>Our Special African Snacks</h2>
+        <div class="special-dish-grid">
+          <div class="dish-card">
+            <img src="./images/mt1.jpeg" alt="Meat Pie" />
+            <h3>Meat Pie</h3>
+            <p>$4</p>
+            <button class="btn add-to-cart" data-item="Meat Pie" data-price="4">
+              Add to Cart
+            </button>
+          </div>
+          <div class="dish-card">
+            <img src="./images/css1.jpeg" alt="Chicken Samosa" />
+            <h3>Chicken Samosa</h3>
+            <p>$2.50</p>
+            <button
+              class="btn add-to-cart"
+              data-item="Chicken Samosa"
+              data-price="2.50"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="dish-card">
+            <img src="./images/spr1.jpeg" alt="Spring Roll" />
+            <h3>Spring Roll</h3>
+            <p>$2</p>
+            <button
+              class="btn add-to-cart"
+              data-item="Spring Roll"
+              data-price="2"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="dish-card">
+  <img src="./images/cks1.jpeg" alt="Chicken Suya" />
+  <h3>Chicken Suya</h3>
+  <p>$4</p>
+  <button class="btn add-to-cart" data-item="Chicken Suya" data-price="4">
+    Add to Cart
+  </button>
+</div>
+        <a href="specials.html" class="btn see-more-btn">See More Specials</a>
+      </section>
+
+      <section id="more-specials" class="special-dish-section genLayout">
+        <h2>More Delicious Snacks</h2>
+        <div class="special-dish-grid">
+          <div class="dish-card">
+            <img src="./images/pf1.jpeg" alt="Puff Puff" />
+            <h3>Puff-Puff</h3>
+            <p>$4</p>
+            <button
+              class="btn add-to-cart"
+              data-item="Puff-Puff"
+              data-price="4"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="dish-card">
+            <img src="./images/ck2.jpeg" alt="Cake" />
+            <h3>Cake</h3>
+            <p>$10</p>
+            <button class="btn add-to-cart" data-item="Cake" data-price="10">
+              Add to Cart
+            </button>
+          </div>
+          <div class="dish-card">
+            <img src="./images/cows1.jpeg" alt="Cow Suya" />
+            <h3>Cow Suya</h3>
+            <p>$15</p>
+            <button
+              class="btn add-to-cart"
+              data-item="Cow Suya"
+              data-price="15"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="dish-card">
+            <img src="./images/zb2.jpeg" alt="Zobo Drink" />
+            <h3>Zobo Drink</h3>
+            <p>$10</p>
+            <button class="btn add-to-cart" data-item="Zobo" data-price="10">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="cart" class="cart-section genLayout hidden">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p>Total: $<span id="cart-total">0</span></p>
+        <button id="checkout-btn" class="btn">Proceed to Checkout</button>
+      </section>
+
+      <section class="healthy-section genLayout">
+        <div class="healthy-content">
+          <div class="healthy-image">
+            <img src="./images/zb2.jpeg" alt="Zobo drink with snacks" />
+          </div>
+          <div class="healthy-text">
+            <h2>We Serve Healthy & Tasty African Snacks</h2>
+            <p>
+              Enjoy authentic Nigerian flavors with our meat pies, puff puffs,
+              samosas, and zobo drinks—made fresh and delivered fast.
+            </p>
+            <a href="menu.html" class="btn">Place Your Order</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="process-section genLayout">
+        <h2>Get Your Food in 30 Minutes</h2>
+        <div class="process-grid">
+          <div class="process-step">
+            <img src="./images/order icon.png" alt="Order icon" />
+            <h3>Order Your Snacks</h3>
+            <p>Choose from our delicious menu of African snacks.</p>
+          </div>
+          <div class="process-step">
+            <img src="./images/pickup.png" alt="Pickup icon" />
+            <h3>Pickup Your Snacks</h3>
+            <p>We’ll prepare your order fresh and fast.</p>
+          </div>
+          <div class="process-step">
+            <img src="./images/enjoy.jpg" alt="Enjoy icon" />
+            <h3>Enjoy Your Snacks</h3>
+            <p>Savor the taste of authentic African flavors.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section genLayout">
+        <div class="testimonial-content">
+          <div class="testimonial-text">
+            <p>
+              "The meat pies and zobo drinks are amazing! So fresh and full of
+              flavor. I’ll definitely be ordering again!"
+            </p>
+            <h3>Jeeny Meo</h3>
+            <div class="rating">★★★★★</div>
+          </div>
+          <div class="testimonial-image">
+            <img src="./images/charitypic1.jpg" alt="Jeeny Meo" />
+          </div>
+        </div>
+      </section>
+
+      <section class="subscribe-section genLayout">
+        <h2>Subscribe For Our Food Updates</h2>
+        <p>Stay updated with new snacks and special offers.</p>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Enter Your Email" required />
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-links genLayout">
+        <a href="#home">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="specials.html">Specials</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+      </div>
+      <p>© Copyright 2025, Afri-Snakie. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

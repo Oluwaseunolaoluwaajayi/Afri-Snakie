@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Check out special offers on healthy African finger foods and snacks at Foodie. Limited-time deals on authentic Nigerian meals."
+    />
+    <meta
+      name="keywords"
+      content="healthy African snacks USA, Nigerian finger foods, meat pies near me, puff puffs, zobo drink, foodie specials"
+    />
+    <meta name="author" content="Foodie" />
+    <title>Specials | Foodie - Healthy African Finger Foods & Snacks</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./images/logosf.webp" alt="Foodie Logo" class="logo-img" />
+        <h1>Afri-Snakie</h1>
+      </div>
+      <label for="toggle" class="hamburger">☰</label>
+      <input type="checkbox" id="toggle" />
+      <nav class="nav-right">
+        <ul>
+          <li>
+            <a href="index.html" aria-label="Home">Home</a>
+          </li>
+          <li>
+            <a href="menu.html" aria-label="Menu">Menu</a>
+          </li>
+          <li>
+            <a href="#specials" aria-label="Specials"
+              ><span class="nav-span">Specials</span></a
+            >
+          </li>
+          <li>
+            <a href="contact.html" aria-label="Contact">Contact</a>
+          </li>
+          <li>
+            <a href="#cart" aria-label="Cart">
+              <img src="./images/cart.jpg" alt="Cart Icon" class="cart-icon" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="specials-hero-section">
+        <div class="genLayout">
+          <h2>Our Special Offers</h2>
+          <p>
+            Enjoy limited-time deals on your favorite African snacks and meals!
+          </p>
+        </div>
+      </section>
+
+      <section id="specials" class="special-dish-section genLayout">
+        <div class="dish-card">
+  <img src="./images/spr1.jpeg" alt="spring rolls" />
+  <h3>Small chops pack (5pcs of puff, 2 spring rolls, 1 samosa) <br>
+    With fried peppered chicken wings</h3>
+  <p>$15 <span class="original-price">$15</span></p>
+  <button class="btn add-to-cart" data-item="Small Chops Pack with Chicken Wings" data-price="15">
+    Add to Cart
+  </button>
+</div>
+<div class="dish-card">
+  <img src="./images/ckn1.jpeg" alt="Small Chops Pack" />
+  <h3>Small chops pack <br>(5pcs of puff, 2 spring rolls, 1 samosa)</h3>
+  <p>$12 <span class="original-price">$12</span></p>
+  <button class="btn add-to-cart" data-item="Small Chops Pack" data-price="12">
+    Add to Cart
+  </button>
+</div>
+          <div class="dish-card">
+            <img src="./images/jlfckn1.jpeg" alt="Jollof Rice Combo" />
+            <h3>Jollof Rice Combo</h3>
+            <p>$50 (Jollof Rice + Zobo Drink)</p>
+            <button
+              class="btn add-to-cart"
+              data-item="Jollof Rice Combo"
+              data-price="50"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="dish-card">
+            <img src="./images/egusieba.jpg" alt="Egusi Soup with Eba" />
+            <h3>Egusi Soup with Eba</h3>
+            <p>$45 (Save $10!)</p>
+            <button
+              class="btn add-to-cart"
+              data-item="Egusi Soup with Eba"
+              data-price="45"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="dish-card">
+            <img src="./images/moimoi.jpeg" alt="Moi-moi" />
+            <h3>Moi-moi</h3>
+            <p>$45 (Save $10!)</p>
+            <button class="btn add-to-cart" data-item="Moi-moi" data-price="45">
+              Add to Cart
+            </button>
+          </div>
+          <div class="dish-card">
+            <img src="./images/chin2.jpeg" alt="Chin Chin Pack" />
+            <h3>Chin Chin Family Pack</h3>
+            <p>$25 <span class="original-price">$30</span></p>
+            <button
+              class="btn add-to-cart"
+              data-item="Chin Chin Family Pack"
+              data-price="25"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="cart" class="cart-section genLayout hidden">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p>Total: $<span id="cart-total">0</span></p>
+        <button id="checkout-btn" class="btn">Proceed to Checkout</button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-links genLayout">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="#specials">Specials</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+      </div>
+      <p>© Copyright 2025, Afri-Snakie. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
